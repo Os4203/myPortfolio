@@ -90,34 +90,34 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-dark-gradient">
-      <div className="container">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-cream">
+    <section id="contact" className="py-16 sm:py-20 bg-dark-gradient">
+      <div className="container px-4 sm:px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-cream">
               Let's Work Together
             </h2>
-            <p className="text-xl text-warm-taupe max-w-2xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg lg:text-xl text-warm-taupe max-w-2xl mx-auto leading-relaxed px-4">
               Have a project in mind? I'd love to hear about it. Let's create
               something amazing together.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             {/* Contact Info */}
-            <div className="space-y-8">
+            <div className="space-y-6 sm:space-y-8 order-2 lg:order-1">
               <div>
-                <h3 className="text-2xl font-bold mb-6 text-cream">
+                <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-cream text-center lg:text-left">
                   Get In Touch
                 </h3>
-                <p className="text-warm-taupe leading-relaxed mb-8">
+                <p className="text-warm-taupe leading-relaxed mb-6 sm:mb-8 text-center lg:text-left text-sm sm:text-base">
                   I'm always open to discussing new opportunities, creative
                   projects, or just having a chat about design. Feel free to
                   reach out through any of the channels below.
                 </p>
               </div>
 
-              <div className="space-y-6">
+              <div className="space-y-4 sm:space-y-6">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-navy-blue/50 backdrop-blur-sm rounded-lg flex items-center justify-center border border-warm-taupe/30">
                     <svg
@@ -192,11 +192,11 @@ const Contact = () => {
               </div>
 
               {/* Social Links */}
-              <div className="pt-8">
-                <h4 className="text-lg font-semibold mb-4 text-cream">
+              <div className="pt-6 sm:pt-8">
+                <h4 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 text-cream text-center lg:text-left">
                   Follow Me
                 </h4>
-                <div className="flex gap-4">
+                <div className="flex gap-3 sm:gap-4 justify-center lg:justify-start">
                   <a
                     href="https://www.linkedin.com/in/osama-taweel-945934242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                     target="_blank"
@@ -231,12 +231,12 @@ const Contact = () => {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-navy-blue/30 backdrop-blur-sm rounded-2xl p-8 border border-warm-taupe/20">
-              <form onSubmit={handleSubmit} className="space-y-6">
+            <div className="bg-navy-blue/30 backdrop-blur-sm rounded-2xl p-4 sm:p-6 lg:p-8 border border-warm-taupe/20 order-1 lg:order-2">
+              <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
                 <div>
                   <label
                     htmlFor="name"
-                    className="block text-cream font-medium mb-2"
+                    className="block text-cream font-medium mb-2 text-sm sm:text-base"
                   >
                     Name
                   </label>
@@ -246,7 +246,7 @@ const Contact = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-charcoal/50 border border-warm-taupe/30 rounded-lg text-cream placeholder-warm-taupe/60 focus:border-cream/50 focus:outline-none transition-colors duration-300"
+                    className="w-full px-3 py-2.5 sm:px-4 sm:py-3 bg-charcoal/50 border border-warm-taupe/30 rounded-lg text-cream placeholder-warm-taupe/60 focus:border-cream/50 focus:outline-none transition-colors duration-300 text-sm sm:text-base"
                     placeholder="Your name"
                     required
                   />
@@ -255,7 +255,7 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-cream font-medium mb-2"
+                    className="block text-cream font-medium mb-2 text-sm sm:text-base"
                   >
                     Email
                   </label>
@@ -265,7 +265,7 @@ const Contact = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-charcoal/50 border border-warm-taupe/30 rounded-lg text-cream placeholder-warm-taupe/60 focus:border-cream/50 focus:outline-none transition-colors duration-300"
+                    className="w-full px-3 py-2.5 sm:px-4 sm:py-3 bg-charcoal/50 border border-warm-taupe/30 rounded-lg text-cream placeholder-warm-taupe/60 focus:border-cream/50 focus:outline-none transition-colors duration-300 text-sm sm:text-base"
                     placeholder="your@email.com"
                     required
                   />
@@ -274,7 +274,7 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="message"
-                    className="block text-cream font-medium mb-2"
+                    className="block text-cream font-medium mb-2 text-sm sm:text-base"
                   >
                     Message
                   </label>
@@ -283,8 +283,8 @@ const Contact = () => {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    rows={5}
-                    className="w-full px-4 py-3 bg-charcoal/50 border border-warm-taupe/30 rounded-lg text-cream placeholder-warm-taupe/60 focus:border-cream/50 focus:outline-none transition-colors duration-300 resize-none"
+                    rows={4}
+                    className="w-full px-3 py-2.5 sm:px-4 sm:py-3 bg-charcoal/50 border border-warm-taupe/30 rounded-lg text-cream placeholder-warm-taupe/60 focus:border-cream/50 focus:outline-none transition-colors duration-300 resize-none text-sm sm:text-base min-h-[100px] sm:min-h-[120px]"
                     placeholder="Tell me about your project..."
                     required
                   ></textarea>
@@ -293,7 +293,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isLoading}
-                  className="w-full px-6 py-4 bg-accent-gradient text-charcoal font-semibold rounded-lg hover:shadow-xl hover:shadow-cream/20 transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                  className="w-full px-4 py-3 sm:px-6 sm:py-4 bg-accent-gradient text-charcoal font-semibold rounded-lg hover:shadow-xl hover:shadow-cream/20 transition-all duration-300 transform sm:hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none text-sm sm:text-base"
                 >
                   {isLoading ? "Sending..." : "Send Message"}
                 </button>

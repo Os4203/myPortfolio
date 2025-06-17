@@ -23,31 +23,31 @@ const Projects = () => {
     {
       title: "Portfolio Website",
       description:
-        "Collaborative project management tool with real-time updates, built using React, Express.js, and Socket.io for seamless team coordination.",
+        "A portfolio website built with React and Tailwind CSS to showcase my projects and skills.",
       image:
         "portfolio .png",
       tags: ["React", "Tailwind CSS"],
-      link: "https://github.com/yourusername/portfolio-website",
+      link: "https://github.com/Os4203/myPortfolio",
     },
   ];
 
   return (
-    <section id="work" className="py-20 bg-charcoal">
-      <div className="container">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-cream">
+    <section id="work" className="py-16 sm:py-20 bg-charcoal">
+      <div className="container px-4 sm:px-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-cream">
             Featured Work
           </h2>
-          <p className="text-xl text-warm-taupe max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg lg:text-xl text-warm-taupe max-w-3xl mx-auto leading-relaxed px-4">
             A collection of projects that showcase my technical skills and
             passion for creating innovative web applications using modern
             technologies and best practices.
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
           {projects.map((project, index) => (
-            <div key={index} className="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1rem)] max-w-md">
+            <div key={index} className="w-full">
               <ProjectCard {...project} />
             </div>
           ))}

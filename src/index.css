@@ -22,6 +22,7 @@
     background-color: #1A1A1A; /* charcoal */
     color: #F5F3F0; /* cream */
     line-height: 1.6;
+    overflow-x: hidden;
   }
 
   /* Custom scrollbar */
@@ -45,7 +46,7 @@
 
 @layer components {
   .container {
-    @apply max-w-7xl mx-auto px-6 lg:px-8;
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
   /* Enhanced button styles */
@@ -81,6 +82,21 @@
 
   .text-gradient-reverse {
     @apply bg-gradient-to-r from-warm-taupe to-cream bg-clip-text text-transparent;
+  }
+
+  /* Responsive text utilities */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }
 

@@ -25,23 +25,22 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-section-gradient">
-      <div className="container">
-        <div className="flex flex-col lg:flex-row items-center gap-16">
+    <section id="about" className="py-16 sm:py-20 bg-section-gradient">
+      <div className="container px-4 sm:px-6">
+        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           {/* Profile Image */}
-          <div className="flex-1 flex justify-center">
+          <div className="flex-1 flex justify-center order-2 lg:order-1">
             <div className="relative group">
               {/* Main image container with enhanced styling */}
-              <div className="w-80 h-[30rem] professional-image-frame border-4 border-warm-taupe/40 shadow-2xl shadow-charcoal/50 bg-gradient-to-br from-navy-blue to-charcoal relative overflow-hidden flex items-center justify-center">
+              <div className="w-64 h-80 sm:w-72 sm:h-96 lg:w-80 lg:h-[30rem] professional-image-frame border-4 border-warm-taupe/40 shadow-2xl shadow-charcoal/50 bg-gradient-to-br from-navy-blue to-charcoal relative overflow-hidden flex items-center justify-center rounded-2xl">
                 <img
                   src="/image.jpg"
                   alt="Osama Taweel"
-                  className="w-full h-full object-cover transition-transform duration-500 high-res-image group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-500 high-res-image group-hover:scale-105 rounded-xl"
                   style={{
                     imageRendering: "high-quality",
                     filter:
                       "contrast(1.15) brightness(1.08) saturate(1.12) sharpen(0.5)",
-
                     objectFit: "cover",
                     objectPosition: "center center",
                     position: "absolute",
@@ -53,35 +52,35 @@ const About = () => {
                   decoding="async"
                 />
                 {/* Gradient overlay for better contrast */}
-                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
               </div>
 
               {/* Enhanced decorative elements */}
-              <div className="absolute -top-8 -right-8 w-28 h-28 bg-cream rounded-full opacity-10 blur-xl animate-pulse"></div>
+              <div className="absolute -top-6 -right-6 sm:-top-8 sm:-right-8 w-20 h-20 sm:w-28 sm:h-28 bg-cream rounded-full opacity-10 blur-xl animate-pulse"></div>
               <div
-                className="absolute -bottom-8 -left-8 w-36 h-36 bg-warm-taupe rounded-full opacity-10 blur-xl animate-pulse"
+                className="absolute -bottom-6 -left-6 sm:-bottom-8 sm:-left-8 w-24 h-24 sm:w-36 sm:h-36 bg-warm-taupe rounded-full opacity-10 blur-xl animate-pulse"
                 style={{ animationDelay: "1s" }}
               ></div>
 
               {/* Floating accent dots */}
               <div
-                className="absolute top-4 right-4 w-3 h-3 bg-cream rounded-full opacity-60 animate-bounce"
+                className="absolute top-4 right-4 w-2 h-2 sm:w-3 sm:h-3 bg-cream rounded-full opacity-60 animate-bounce"
                 style={{ animationDelay: "0.5s" }}
               ></div>
               <div
-                className="absolute bottom-20 right-8 w-2 h-2 bg-warm-taupe rounded-full opacity-40 animate-bounce"
+                className="absolute bottom-16 sm:bottom-20 right-6 sm:right-8 w-2 h-2 bg-warm-taupe rounded-full opacity-40 animate-bounce"
                 style={{ animationDelay: "1.5s" }}
               ></div>
             </div>
           </div>
 
           {/* About Content */}
-          <div className="flex-1 max-w-2xl">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-cream">
+          <div className="flex-1 max-w-2xl order-1 lg:order-2 text-center lg:text-left">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-cream">
               About Me
             </h2>
 
-            <div className="space-y-6 text-warm-taupe text-lg leading-relaxed">
+            <div className="space-y-4 sm:space-y-6 text-warm-taupe text-base sm:text-lg leading-relaxed">
               <p>
                 I'm{" "}
                 <span className="text-cream font-semibold">Osama Taweel</span>,
@@ -107,15 +106,15 @@ const About = () => {
             </div>
 
             {/* Skills */}
-            <div className="mt-12">
-              <h3 className="text-2xl font-bold mb-6 text-cream">
+            <div className="mt-8 sm:mt-12">
+              <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-cream">
                 Skills & Expertise
               </h3>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-2 sm:gap-3 justify-center lg:justify-start">
                 {skills.map((skill, index) => (
                   <span
                     key={index}
-                    className="px-4 py-2 bg-navy-blue/50 backdrop-blur-sm text-warm-taupe border border-warm-taupe/30 rounded-full text-sm font-medium hover:bg-warm-taupe/20 hover:border-cream/50 transition-all duration-300 cursor-default"
+                    className="px-3 py-1.5 sm:px-4 sm:py-2 bg-navy-blue/50 backdrop-blur-sm text-warm-taupe border border-warm-taupe/30 rounded-full text-xs sm:text-sm font-medium hover:bg-warm-taupe/20 hover:border-cream/50 transition-all duration-300 cursor-default"
                   >
                     {skill}
                   </span>
@@ -124,13 +123,12 @@ const About = () => {
             </div>
 
             {/* CTA */}
-            <div className="flex justify-center mt-8">
+            <div className="flex justify-center lg:justify-start mt-6 sm:mt-8">
               <button
                 onClick={() => {
-                  // Option 1: If you have a resume file in public folder, uncomment the next line:
                   window.open("/resume.pdf", "_blank");
                 }}
-                className="px-6 py-3 bg-accent-gradient text-charcoal font-semibold rounded-lg hover:shadow-xl hover:shadow-cream/20 transition-all duration-300 transform hover:scale-105 cursor-pointer"
+                className="px-6 py-3 bg-accent-gradient text-charcoal font-semibold rounded-lg hover:shadow-xl hover:shadow-cream/20 transition-all duration-300 transform hover:scale-105 cursor-pointer text-sm sm:text-base"
               >
                 Download Resume
               </button>
