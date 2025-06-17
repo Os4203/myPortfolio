@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #1A1A1A; /* charcoal */
+    color: #F5F3F0; /* cream */
+    line-height: 1.6;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #2C4B5A; /* navy-blue */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #D4C4B0; /* warm-taupe */
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #F5F3F0; /* cream */
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-6 lg:px-8;
+  }
+
+  /* Enhanced button styles */
+  .btn-primary {
+    @apply px-6 py-3 bg-accent-gradient text-charcoal font-semibold rounded-lg;
+    @apply hover:shadow-xl hover:shadow-cream/20 transition-all duration-300;
+    @apply transform hover:scale-105;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 border-2 border-warm-taupe text-warm-taupe;
+    @apply hover:bg-warm-taupe hover:text-charcoal font-semibold rounded-lg;
+    @apply transition-all duration-300;
+  }
+
+  /* Form input styles */
+  .form-input {
+    @apply w-full px-4 py-3 bg-charcoal/50 border border-warm-taupe/30 rounded-lg;
+    @apply text-cream placeholder-warm-taupe/60;
+    @apply focus:border-cream/50 focus:outline-none transition-colors duration-300;
+  }
+
+  /* Card styles */
+  .card {
+    @apply bg-navy-blue/50 backdrop-blur-sm rounded-2xl border border-warm-taupe/20;
+    @apply hover:border-cream/40 transition-all duration-300;
+  }
+
+  /* Text gradient utilities */
+  .text-gradient {
+    @apply bg-gradient-to-r from-cream to-warm-taupe bg-clip-text text-transparent;
+  }
+
+  .text-gradient-reverse {
+    @apply bg-gradient-to-r from-warm-taupe to-cream bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  /* Animation utilities */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  /* Custom animations */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 20px rgba(245, 243, 240, 0.2);
+    }
+    to {
+      box-shadow: 0 0 30px rgba(245, 243, 240, 0.4);
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 0 0 20px rgba(212, 196, 176, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 40px rgba(245, 243, 240, 0.5);
+    }
+  }
+
+  /* Backdrop blur utilities */
+  .backdrop-blur-light {
+    backdrop-filter: blur(8px);
+  }
+
+  .backdrop-blur-medium {
+    backdrop-filter: blur(16px);
+  }
+
+  .backdrop-blur-heavy {
+    backdrop-filter: blur(24px);
+  }
+
+  /* Glass morphism effect */
+  .glass {
+    @apply bg-navy-blue/30 backdrop-blur-md border border-warm-taupe/20;
+  }
+
+  .glass-light {
+    @apply bg-cream/10 backdrop-blur-md border border-cream/20;
+  }
+
+  /* High-quality image rendering */
+  .high-res-image {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: high-quality;
+    -ms-interpolation-mode: bicubic;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+
+  /* Enhanced image container */
+  .professional-image-frame {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    box-shadow: 
+      0 25px 50px -12px rgba(0, 0, 0, 0.25),
+      0 0 0 1px rgba(212, 196, 176, 0.1),
+      inset 0 1px 0 rgba(245, 243, 240, 0.1);
+  }
+
+  .professional-image-frame::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      45deg,
+      rgba(245, 243, 240, 0.02) 0%,
+      transparent 50%,
+      rgba(212, 196, 176, 0.02) 100%
+    );
+    pointer-events: none;
+    z-index: 1;
+  }
+}
