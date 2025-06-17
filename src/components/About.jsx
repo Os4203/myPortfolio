@@ -6,6 +6,7 @@ const About = () => {
     "C#",
     "Java",
     "OOP",
+    "Flutter",
     "ASP.NET",
     "ASP.NET Core",
     "ASP.NET MVC",

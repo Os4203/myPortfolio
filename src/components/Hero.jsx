@@ -26,9 +26,11 @@ const Hero = () => {
           </h1>
 
           <p className="text-lg sm:text-xl lg:text-2xl text-warm-taupe mb-8 max-w-2xl leading-relaxed mx-auto sm:mx-0">
-            Software Developer & Digital Innovator creating impactful solutions
-            through code and design. Passionate about building modern web
-            applications and user experiences.
+            Motivated full-stack developer with strong experience in web and
+            mobile app development. Skilled in React.js, Node.js, Express.js,
+            Flutter, ASP.NET, Java, and C++. Proficient in MongoDB, SQL,
+            Tailwind CSS, and Bootstrap. Passionate about clean code, scalable
+            systems, and delivering reliable cross-platform solutions.
           </p>
 
           {/* CTA Buttons */}
