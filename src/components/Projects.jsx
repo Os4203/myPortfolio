@@ -7,7 +7,7 @@ const Projects = () => {
       title:
         "Empowering IT Students: A Digital Framework for Soft Skills Assessment",
       description:
-        "Complete Edusoft solution built with React, Node.js,Express.js, and MongoDB featuring user authentication, supervisor dashboard, and admin dashboard.",
+        "A digital framework for soft skills assessment, built with React, Node.js, and MongoDB to empower IT students with real-time feedback and development opportunities.",
       image:
        "edusoft.png",
       tags: [
