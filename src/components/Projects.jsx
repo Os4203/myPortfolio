@@ -17,6 +17,12 @@ const Projects = () => {
         "Express.js",
         "Tailwind CSS",
         "APIs",
+        "React Router",
+        "React Hooks",
+        "React Context",
+        "React Redux",
+        
+        
       ],
       link: "https://github.com/Os4203/eduSoft",
     },
@@ -26,9 +32,21 @@ const Projects = () => {
         "A portfolio website built with React and Tailwind CSS to showcase my projects and skills.",
       image:
         "portfolio .png",
-      tags: ["React", "Tailwind CSS"],
+      tags: ["React", "Tailwind CSS","Responsive Design","React Router"],
       link: "https://github.com/Os4203/myPortfolio",
+      liveDemo: "https://www.myportfolio.cam/"
     },
+    {
+      title: "Arab Chemistry Olympiad - Ministry of Education Jordan",
+      description:
+        "Official website developed for the Ministry of Education Jordan for the Arab Chemistry Olympiad, featuring participating countries, chemistry subjects, and educational content with multi-language support.",
+      image:
+        "arab olympiad.png", // Using existing image, you can replace with a specific screenshot
+      tags: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
+      link: "https://github.com/Os4203/Arab-Chemistry-Olympiad",
+      liveDemo: "https://apps.moe.gov.jo/App/ArabChemistryOlympiad/"
+    },
+    
   ];
 
   return (

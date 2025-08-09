@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProjectCard = ({ title, description, image, tags, link }) => {
+const ProjectCard = ({ title, description, image, tags, link, liveDemo }) => {
   return (
     <div className="group relative bg-navy-blue/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-warm-taupe/20 hover:border-cream/40 transition-all duration-500 sm:hover:scale-105 hover:shadow-2xl hover:shadow-cream/10 h-full flex flex-col">
       {/* Image */}
@@ -14,14 +14,26 @@ const ProjectCard = ({ title, description, image, tags, link }) => {
         
         {/* Overlay Content */}
         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <a 
-            href={link} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="px-4 py-2 sm:px-6 sm:py-3 bg-accent-gradient text-charcoal font-semibold rounded-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 hover:scale-105 text-sm sm:text-base"
-          >
-            View Project
-          </a>
+          <div className="flex gap-2 sm:gap-3">
+            <a 
+              href={link} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="px-3 py-2 sm:px-4 sm:py-2 bg-accent-gradient text-charcoal font-semibold rounded-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 hover:scale-105 text-xs sm:text-sm"
+            >
+              {liveDemo ? 'GitHub' : 'View Project'}
+            </a>
+            {liveDemo && (
+              <a 
+                href={liveDemo} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="px-3 py-2 sm:px-4 sm:py-2 bg-cream text-charcoal font-semibold rounded-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 hover:scale-105 text-xs sm:text-sm"
+              >
+                Live Demo
+              </a>
+            )}
+          </div>
         </div>
       </div>
       
