@@ -23,5 +23,11 @@ dist-ssr
 *.sln
 *.sw?
 
-# Public assets (keeping images for portfolio)
-# public/
+# Public assets - keep private
+public/
+# Ignore all images and PDFs
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.pdf
