@@ -9,7 +9,7 @@ const Projects = () => {
       description:
         "A digital framework for soft skills assessment, built with React, Node.js, and MongoDB to empower IT students with real-time feedback and development opportunities.",
             image:
-        "https://via.placeholder.com/400x300/2C3E50/ECF0F1?text=EduSoft+Project", // Replace with your hosted image URL
+        "/edusoft.png",
       tags: [
         "React",
         "Node.js",
