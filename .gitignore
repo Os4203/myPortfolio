@@ -23,5 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 
-# Public assets
-public/
+# Public assets (keeping images for portfolio)
+# public/
