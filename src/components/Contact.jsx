@@ -212,7 +212,7 @@ const Contact = () => {
                     </svg>
                   </a>
                   <a
-                    href="https://www.instagram.com/osama.0.3?igsh=b3BmM3J6aWMxNG96&utm_source=qr"
+                    href="https://www.instagram.com/osama.taweel_0.3?igsh=b3BmM3J6aWMxNG96&utm_source=qr"
                     title="Instagram"
                     target="_blank"
                     rel="noopener noreferrer"
