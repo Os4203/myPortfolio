@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="text-center md:text-left">
               <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
                 <img 
-                  src="/portfolio .png" 
+                  src="/portfolio.png" 
                   alt="Osama Taweel" 
                   className="w-10 h-10"
                 />

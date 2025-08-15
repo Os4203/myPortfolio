@@ -18,7 +18,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center gap-2 font-semibold text-lg">
             <span className="text-2xl">
-              <img src="/portfolio .png" alt="resume" className="w-8 h-8 sm:w-10 sm:h-10" />
+              <img src="/portfolio.png" alt="resume" className="w-8 h-8 sm:w-10 sm:h-10" />
             </span>
             <span className="text-cream text-sm sm:text-lg">Osama Taweel</span>
           </div>

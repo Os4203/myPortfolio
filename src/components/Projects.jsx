@@ -8,8 +8,8 @@ const Projects = () => {
         "Empowering IT Students: A Digital Framework for Soft Skills Assessment",
       description:
         "A digital framework for soft skills assessment, built with React, Node.js, and MongoDB to empower IT students with real-time feedback and development opportunities.",
-      image:
-       "edusoft.png",
+            image:
+        "/edusoft.png",
       tags: [
         "React",
         "Node.js",
@@ -31,7 +31,7 @@ const Projects = () => {
       description:
         "A portfolio website built with React and Tailwind CSS to showcase my projects and skills.",
       image:
-        "portfolio .png",
+        "/portfolio.png",
       tags: ["React", "Tailwind CSS","Responsive Design","React Router"],
       link: "https://github.com/Os4203/myPortfolio",
       liveDemo: "https://www.myportfolio.cam/"
@@ -41,7 +41,7 @@ const Projects = () => {
       description:
         "Official website developed for the Ministry of Education Jordan for the Arab Chemistry Olympiad, featuring participating countries, chemistry subjects, and educational content with multi-language support.",
       image:
-        "arab olympiad.png", // Using existing image, you can replace with a specific screenshot
+        "/arab-olympiad.png", // Using existing image, you can replace with a specific screenshot
       tags: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
       link: "https://github.com/Os4203/Arab-Chemistry-Olympiad",
       liveDemo: "https://apps.moe.gov.jo/App/ArabChemistryOlympiad/"
