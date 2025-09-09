@@ -7,6 +7,12 @@ const About = () => {
     "Java",
     "OOP",
     "Flutter",
+    "Spring Core",
+    "Spring Framework",
+    "Spring Boot",
+    "Spring Data JPA",
+    "JPA and Hibernate",
+    "Spring Web API",
     "ASP.NET",
     "ASP.NET Core",
     "ASP.NET MVC",
@@ -23,6 +29,8 @@ const About = () => {
     "Bootstrap CSS",
     "API Development",
     "Full-Stack Development",
+   
+    
   ];
 
   return (
