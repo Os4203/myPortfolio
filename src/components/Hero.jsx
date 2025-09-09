@@ -26,11 +26,11 @@ const Hero = () => {
           </h1>
 
           <p className="text-lg sm:text-xl lg:text-2xl text-warm-taupe mb-8 max-w-2xl leading-relaxed mx-auto sm:mx-0">
-            Motivated full-stack developer with strong experience in web and
-            mobile app development. Skilled in React.js, Node.js, Express.js,
-            Flutter, ASP.NET, Java, and C++. Proficient in MongoDB, SQL,
-            Tailwind CSS, and Bootstrap. Passionate about clean code, scalable
-            systems, and delivering reliable cross-platform solutions.
+            Full‑stack developer building robust web and mobile solutions. Strong with Java
+            (Spring Core, Spring Framework, Spring Boot) and JavaScript/TypeScript (React.js,
+            Node.js, Express.js), plus ASP.NET and Flutter. Proficient with MongoDB and SQL,
+            designing RESTful APIs and crafting responsive UIs with Tailwind CSS and Bootstrap.
+            Focused on clean code, scalable architectures, and production‑ready delivery.
           </p>
 
           {/* CTA Buttons */}
