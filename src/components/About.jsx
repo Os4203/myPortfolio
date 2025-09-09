@@ -127,7 +127,7 @@ const About = () => {
             <div className="flex justify-center lg:justify-start mt-6 sm:mt-8">
               <button
                 onClick={() => {
-                  window.open("/resume.pdf", "_blank");
+                  window.open("/Osama_Taweel_CV.pdf", "_blank");
                 }}
                 className="px-6 py-3 bg-accent-gradient text-charcoal font-semibold rounded-lg hover:shadow-xl hover:shadow-cream/20 transition-all duration-300 transform hover:scale-105 cursor-pointer text-sm sm:text-base"
               >
